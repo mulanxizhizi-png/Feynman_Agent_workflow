@@ -33,13 +33,18 @@
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 721,
-      "sha256": "5686606bf03f8405c444edbbdad0a9ccea5e3109600a356d38d477b0815b134a"
+      "bytes": 842,
+      "sha256": "ef620f8b14ea8d876a9e8c0b4f3e5055144981a7e6d6bb5ec689d650b6ae325f"
     },
     {
       "path": ".gitignore",
       "bytes": 126,
       "sha256": "2c8fdfec393b83fea59f60e850eceee65f45d1f57e99afa4a06f41f7f69ac5c1"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/README.md",
+      "bytes": 1106,
+      "sha256": "ee35d9649e9c4f374e456ac286be1a147537022e05555fdb94f8a31865b1c734"
     },
     {
       "path": "2026-10-08-agent-workflow/install-antigravity.ps1",
@@ -49,12 +54,12 @@
     {
       "path": "2026-10-08-agent-workflow/package-lock.json",
       "bytes": 213,
-      "sha256": "ff8aa3b04be5aa87e0322ca829788cfc8ad56375edff25f341e5b0c7b0a34df1"
+      "sha256": "b19a8613007c8a4e8f6f4d6dc05248feb6fc1538af596f9c4ec7b7ccb04a3b2f"
     },
     {
       "path": "2026-10-08-agent-workflow/package.json",
       "bytes": 614,
-      "sha256": "809c0860d6a7324e069491576b66a679e3f6addb0a3668e91a6ca372b1015eaa"
+      "sha256": "2c686345d76408cec1424035c62975b29193836589aeab3d0c5cb0c6aeffe196"
     },
     {
       "path": "2026-10-08-agent-workflow/prompts/visual-review.txt",
@@ -62,14 +67,14 @@
       "sha256": "2a9d33e860b548def018bf3c6b9657fe35e273d880486fc661eb959962ecdda0"
     },
     {
-      "path": "2026-10-08-agent-workflow/README.md",
-      "bytes": 1106,
-      "sha256": "ee35d9649e9c4f374e456ac286be1a147537022e05555fdb94f8a31865b1c734"
+      "path": "2026-10-08-agent-workflow/scripts/api-probe.py",
+      "bytes": 4189,
+      "sha256": "6ba294973c6ea9c3ee782871a5125be5351f46d90e6810fc0c025eb0af1af3b3"
     },
     {
-      "path": "2026-10-08-agent-workflow/scripts/api-probe.py",
-      "bytes": 3953,
-      "sha256": "21403bd13ad7ee0778304196eb58654be6ae341d7ca7914001773b8dcc6deccf"
+      "path": "2026-10-08-agent-workflow/scripts/api-probe.test.py",
+      "bytes": 2054,
+      "sha256": "8abfbf02e85c0d3ceb93067ccaa7d1c4595f89f8054fd382471648781960e24d"
     },
     {
       "path": "2026-10-08-agent-workflow/scripts/gemini-api.mjs",
@@ -112,6 +117,11 @@
       "sha256": "23cd8a7561f5033be3b02afad8569e6cc242dcf279cbabc08712055e57663e36"
     },
     {
+      "path": "README.md",
+      "bytes": 4272,
+      "sha256": "d0322d373c8621fcbda8559f0bc4550158c3e79aa1722628ecc1c485bf551fc7"
+    },
+    {
       "path": "docs/flow.md",
       "bytes": 978,
       "sha256": "9c9b1c59ba373ab8c51f93ea35c0e78f0aa5b6b8205c2e44135c3e8f0a34c984"
@@ -128,8 +138,8 @@
     },
     {
       "path": "docs/validation.md",
-      "bytes": 1688,
-      "sha256": "abed1a110c7cc6d7634130a6afe4987d6bcefa20376002ad2c2a14f53051af54"
+      "bytes": 2146,
+      "sha256": "21d467350ddd569ddd394dbe88e75877746a82949b8974df1dad6d7dc99b7b30"
     },
     {
       "path": "examples/recheck.example.json",
@@ -140,11 +150,6 @@
       "path": "examples/request.example.json",
       "bytes": 353,
       "sha256": "f80a238e43e6d864efbcbb2fdd5fc268a444c40ee4c54473d03675009c25e972"
-    },
-    {
-      "path": "README.md",
-      "bytes": 4235,
-      "sha256": "51f0e1f04b015ef1531ec38da0a7432e4b9c01db273bad6eb33d5401102ebc5b"
     }
   ],
   "note": "Manifest omits itself. Secrets and runtime are not distributed."

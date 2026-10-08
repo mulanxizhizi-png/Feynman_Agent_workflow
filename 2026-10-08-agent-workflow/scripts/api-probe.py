@@ -8,13 +8,18 @@ import urllib.error
 import urllib.request
 
 
+def proxy_opener(proxy):
+    # An empty URL is not a valid proxy. An empty mapping explicitly disables
+    # both configured proxies and inherited HTTP(S)_PROXY for direct mode.
+    proxies = {"http": proxy, "https": proxy} if proxy else {}
+    return urllib.request.build_opener(urllib.request.ProxyHandler(proxies))
+
+
 def main():
     config = json.loads(sys.stdin.readline())
     key = config.pop("key")
     proxy = config.get("proxy", "http://127.0.0.1:7897")
-    opener = urllib.request.build_opener(
-        urllib.request.ProxyHandler({"http": proxy, "https": proxy})
-    )
+    opener = proxy_opener(proxy)
     action = config.get("action", "models")
     endpoint = "https://generativelanguage.googleapis.com/v1beta/"
     body = None

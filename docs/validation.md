@@ -15,3 +15,10 @@
 密钥仅用于用户授权的Google调用及本次GitHub Actions加密Secret，不写源文件、Git、ZIP或报告。
 API store:false不等于关闭免费层级全部数据使用政策；上传素材仍应属于用户授权范围。
 MCP模板关闭；本包没有实现Google OAuth续期、自动截图、后台常驻编排或故障恢复。
+
+## 打包后跨环境检查
+
+GitHub Actions代码验证通过。首次仓库Secret连通检查在到达Google前报no host given：
+原因是urllib将空字符串误作代理地址。v0.1.1改为空ProxyHandler映射，显式关闭代理；
+新增两项离线回归检查覆盖显式代理保留和无代理模式忽略环境代理。
+实际Google连通结果见仓库Actions中的Gemini secret connection check，不能以Secret存在代替调用成功。

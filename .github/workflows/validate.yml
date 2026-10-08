@@ -21,3 +21,5 @@ jobs:
       - name: Offline contract tests
         working-directory: 2026-10-08-agent-workflow
         run: npm test
+      - name: Offline transport regression tests
+        run: python 2026-10-08-agent-workflow/scripts/api-probe.test.py
