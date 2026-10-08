@@ -1,0 +1,11 @@
+{
+  "brief": "评审本轮真实桌面页面截图，保留文案原图并按项目规则给出七维评分和可执行修改提示词。",
+  "screenshots": [
+    "C:/path/to/project/review/page.jpg"
+  ],
+  "references": [
+    "C:/path/to/project/assets/reference.png"
+  ],
+  "rulesPath": "C:/path/to/project/AGENTS.md",
+  "model": "gemini-3.8-flash"
+}

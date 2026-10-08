@@ -1,0 +1,12 @@
+**/node_modules/
+**/runtime/
+.env
+.env.*
+!.env.example
+*.log
+*.exe
+*.dll
+*.pyc
+**/__pycache__/
+*.zip
+.codex/config.local.toml

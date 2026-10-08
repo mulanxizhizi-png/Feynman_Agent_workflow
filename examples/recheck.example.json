@@ -1,0 +1,8 @@
+{
+  "brief": "复验获采纳的问题，沿用上一轮规则和问题ID。图片必须对应修改后的新版本。",
+  "screenshots": [
+    "C:/path/to/project/review/page-round-2.jpg"
+  ],
+  "rulesPath": "C:/path/to/project/AGENTS.md",
+  "previousReviewPath": "C:/path/to/workflow/runtime/reviews/previous/review.json"
+}

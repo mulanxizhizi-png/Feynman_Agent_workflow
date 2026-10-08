@@ -1,0 +1,151 @@
+{
+  "format": 1,
+  "files": [
+    {
+      "path": ".agents/skills/astra-sol-gemini/SKILL.md",
+      "bytes": 4109,
+      "sha256": "9b795845d5f6dbbae994933327fce1b398c4544e07fb035ddba705bf9dd529d4"
+    },
+    {
+      "path": ".codex/agents/astra-reviewer.toml",
+      "bytes": 804,
+      "sha256": "7f93c9302983ed1a4a64bdb5deddfc82449c9bf09de97e026cca8ad7ed59dd22"
+    },
+    {
+      "path": ".codex/agents/sol-worker.toml",
+      "bytes": 919,
+      "sha256": "95ca4b9f7b079297a36da6a99338d7aa6334f6e55828efabcb1aadb3df960ea7"
+    },
+    {
+      "path": ".codex/config.toml",
+      "bytes": 427,
+      "sha256": "20297b5230ae29efa14d83c6c49bb4f86616e6dfe28ec3b7e7a92be66898ce09"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/gemini-check.yml",
+      "bytes": 567,
+      "sha256": "575ed825feeabfe7e45654a801834907a2192b7a401e13c9264d197484c070e1"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 721,
+      "sha256": "5686606bf03f8405c444edbbdad0a9ccea5e3109600a356d38d477b0815b134a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 126,
+      "sha256": "2c8fdfec393b83fea59f60e850eceee65f45d1f57e99afa4a06f41f7f69ac5c1"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/install-antigravity.ps1",
+      "bytes": 7164,
+      "sha256": "6799b0b3d3ae4af24d88bc4de5eed4fed5742748efece971f68d62dba7841c69"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/package-lock.json",
+      "bytes": 213,
+      "sha256": "ff8aa3b04be5aa87e0322ca829788cfc8ad56375edff25f341e5b0c7b0a34df1"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/package.json",
+      "bytes": 614,
+      "sha256": "809c0860d6a7324e069491576b66a679e3f6addb0a3668e91a6ca372b1015eaa"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/prompts/visual-review.txt",
+      "bytes": 5782,
+      "sha256": "2a9d33e860b548def018bf3c6b9657fe35e273d880486fc661eb959962ecdda0"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/README.md",
+      "bytes": 1106,
+      "sha256": "ee35d9649e9c4f374e456ac286be1a147537022e05555fdb94f8a31865b1c734"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/scripts/api-probe.py",
+      "bytes": 3953,
+      "sha256": "21403bd13ad7ee0778304196eb58654be6ae341d7ca7914001773b8dcc6deccf"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/scripts/gemini-api.mjs",
+      "bytes": 5863,
+      "sha256": "4511e6a26f29cf99e97c6b8badafd1c2b571bcd4ddfa4fb883a910547bc80871"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/scripts/gemini.mjs",
+      "bytes": 16087,
+      "sha256": "5769b8695c3ff967977f1239aa5f69beb1129af6e43bd6abc655d7c54e00caf7"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/scripts/gemini.test.mjs",
+      "bytes": 4425,
+      "sha256": "22435742a2015ef7d40563045e7b3c852187f70093406f7a113dee230a139a5b"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/scripts/login.mjs",
+      "bytes": 174,
+      "sha256": "df220f5d5e9c0e057988897c1d34c1095ee6fa7b81684ac2f1cbbaeb06986059"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/scripts/mcp.mjs",
+      "bytes": 3344,
+      "sha256": "3c3e7aa4daaf080156433ea30ab9c7c1df70d6e6f0e2a49080b6d9620ba0ec03"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/scripts/review-contract.mjs",
+      "bytes": 9792,
+      "sha256": "84258ca41cc5e50b6506f248bdf7e86d6332532e8ecdc8e7bae4e52fbefbc507"
+    },
+    {
+      "path": "2026-10-08-agent-workflow/scripts/review-contract.test.mjs",
+      "bytes": 3249,
+      "sha256": "ad529fea6d4abab83d29f48ca83dbbdf3f39b713e4a6a42a3dbc5eadce3dd59f"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1421,
+      "sha256": "23cd8a7561f5033be3b02afad8569e6cc242dcf279cbabc08712055e57663e36"
+    },
+    {
+      "path": "docs/flow.md",
+      "bytes": 978,
+      "sha256": "9c9b1c59ba373ab8c51f93ea35c0e78f0aa5b6b8205c2e44135c3e8f0a34c984"
+    },
+    {
+      "path": "docs/native-html-project-rules.md",
+      "bytes": 12689,
+      "sha256": "dc57a6a87dbc9e327a25e00de1b43ffba7bd1d3e6da34d8c0b81f8904ae9df84"
+    },
+    {
+      "path": "docs/third-party.md",
+      "bytes": 522,
+      "sha256": "a3a5f60c3f59887f10a34a9a10de3e0ceff812da2f95a82e09c555eba32094ce"
+    },
+    {
+      "path": "docs/validation.md",
+      "bytes": 1688,
+      "sha256": "abed1a110c7cc6d7634130a6afe4987d6bcefa20376002ad2c2a14f53051af54"
+    },
+    {
+      "path": "examples/recheck.example.json",
+      "bytes": 326,
+      "sha256": "08ac1be63ff7bbd0ec138100b9eb78341899170bca2e56204631ab8d225fdc34"
+    },
+    {
+      "path": "examples/request.example.json",
+      "bytes": 353,
+      "sha256": "f80a238e43e6d864efbcbb2fdd5fc268a444c40ee4c54473d03675009c25e972"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4235,
+      "sha256": "51f0e1f04b015ef1531ec38da0a7432e4b9c01db273bad6eb33d5401102ebc5b"
+    }
+  ],
+  "note": "Manifest omits itself. Secrets and runtime are not distributed."
+}

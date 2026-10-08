@@ -1,0 +1,13 @@
+# Template: select Astra in the app for the main chat.
+model = "gpt-6-astra"
+[agents]
+enabled = true
+default_subagent_model = "gpt-6.1-sol"
+max_concurrent_threads_per_session = 3
+[mcp_servers.gemini_visual_review]
+enabled = false
+command = "node"
+# Before enabling, replace this with the absolute path of your local checkout.
+args = ["2026-10-08-agent-workflow/scripts/mcp.mjs"]
+startup_timeout_sec = 20
+tool_timeout_sec = 300
