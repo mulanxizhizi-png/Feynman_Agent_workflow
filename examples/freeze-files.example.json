@@ -1,0 +1,27 @@
+[
+  {
+    "id": "source",
+    "path": "src/app.mjs",
+    "role": "source"
+  },
+  {
+    "id": "requirements",
+    "path": "runtime/task/requirements.txt",
+    "role": "reference"
+  },
+  {
+    "id": "rules",
+    "path": "runtime/task/rules.txt",
+    "role": "reference"
+  },
+  {
+    "id": "actual-checks",
+    "path": "runtime/task/checks.txt",
+    "role": "programmatic"
+  },
+  {
+    "id": "input-index",
+    "path": "runtime/task/input-index.json",
+    "role": "reference"
+  }
+]

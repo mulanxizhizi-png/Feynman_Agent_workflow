@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { dimensions, scoringPrompt, validateScoredReview } from './review-contract.mjs';
-import { parseReview } from './gemini.mjs';
+import { dimensions, scoringPrompt, validateScoredReview } from '../scripts/review-contract.mjs';
+import { parseReview } from '../scripts/gemini.mjs';
 
 const perfect = () => ({ schema_version: 2, status: 'pass', summary: '满足冻结标准', reviewed_images: ['screen-01.png'], overall_score: 10, dimension_scores: dimensions.map(d => ({ id: d.id, score: 10, evidence: 'screen-01.png的具体证据', issue_ids: [] })), issues: [], executor_prompt: '无需返工，继续程序验收。', technical_checks: ['实际字体加载'], recheck: [] });
 const deducted = () => {

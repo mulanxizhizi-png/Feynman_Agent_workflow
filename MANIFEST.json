@@ -2,24 +2,29 @@
   "format": 1,
   "files": [
     {
-      "path": ".agents/skills/astra-sol-gemini/SKILL.md",
-      "bytes": 4109,
-      "sha256": "9b795845d5f6dbbae994933327fce1b398c4544e07fb035ddba705bf9dd529d4"
+      "path": ".agents/skills/independent-review-workflow/SKILL.md",
+      "bytes": 4078,
+      "sha256": "2adeea47b62dad47e54b93938431dce41655d6839f8e877e2d2e03c1a886ac71"
     },
     {
-      "path": ".codex/agents/astra-reviewer.toml",
-      "bytes": 804,
-      "sha256": "7f93c9302983ed1a4a64bdb5deddfc82449c9bf09de97e026cca8ad7ed59dd22"
+      "path": ".agents/skills/sol-terra-gemini/SKILL.md",
+      "bytes": 329,
+      "sha256": "f657ccdf768d4c645b9d2cfa87b051df803bb58ae20bbc7b53dd21963da95c37"
     },
     {
-      "path": ".codex/agents/sol-worker.toml",
-      "bytes": 919,
-      "sha256": "95ca4b9f7b079297a36da6a99338d7aa6334f6e55828efabcb1aadb3df960ea7"
+      "path": ".codex/agents/executor.toml",
+      "bytes": 971,
+      "sha256": "56dd1e534e731d715d3469b9b9cb3380961db65a2867acd6b27d7ba200453879"
+    },
+    {
+      "path": ".codex/agents/independent-reviewer.toml",
+      "bytes": 2213,
+      "sha256": "02393fedce532b10ec0d2796a4023b18cccd807eb895fbf0a7afe2fd8d041f57"
     },
     {
       "path": ".codex/config.toml",
-      "bytes": 427,
-      "sha256": "20297b5230ae29efa14d83c6c49bb4f86616e6dfe28ec3b7e7a92be66898ce09"
+      "bytes": 631,
+      "sha256": "1518a18011242e9fd5227ca7cf6a78001c90951d2e5023f9a613ba6b50ae6b69"
     },
     {
       "path": ".gitattributes",
@@ -28,129 +33,233 @@
     },
     {
       "path": ".github/workflows/gemini-check.yml",
-      "bytes": 567,
-      "sha256": "575ed825feeabfe7e45654a801834907a2192b7a401e13c9264d197484c070e1"
+      "bytes": 521,
+      "sha256": "d2b0b38659108aa1b142ae1a3eb94d4614d08224f133909a805cab8c951869a8"
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 842,
-      "sha256": "ef620f8b14ea8d876a9e8c0b4f3e5055144981a7e6d6bb5ec689d650b6ae325f"
+      "bytes": 614,
+      "sha256": "9e59c5069062fe990a161738eb1ce471259b121bf9fa3de4ee63cf5a1a4271d7"
     },
     {
       "path": ".gitignore",
-      "bytes": 126,
-      "sha256": "2c8fdfec393b83fea59f60e850eceee65f45d1f57e99afa4a06f41f7f69ac5c1"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/README.md",
-      "bytes": 1106,
-      "sha256": "ee35d9649e9c4f374e456ac286be1a147537022e05555fdb94f8a31865b1c734"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/install-antigravity.ps1",
-      "bytes": 7164,
-      "sha256": "6799b0b3d3ae4af24d88bc4de5eed4fed5742748efece971f68d62dba7841c69"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/package-lock.json",
-      "bytes": 213,
-      "sha256": "b19a8613007c8a4e8f6f4d6dc05248feb6fc1538af596f9c4ec7b7ccb04a3b2f"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/package.json",
-      "bytes": 614,
-      "sha256": "2c686345d76408cec1424035c62975b29193836589aeab3d0c5cb0c6aeffe196"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/prompts/visual-review.txt",
-      "bytes": 5782,
-      "sha256": "2a9d33e860b548def018bf3c6b9657fe35e273d880486fc661eb959962ecdda0"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/scripts/api-probe.py",
-      "bytes": 4189,
-      "sha256": "6ba294973c6ea9c3ee782871a5125be5351f46d90e6810fc0c025eb0af1af3b3"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/scripts/api-probe.test.py",
-      "bytes": 2054,
-      "sha256": "8abfbf02e85c0d3ceb93067ccaa7d1c4595f89f8054fd382471648781960e24d"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/scripts/gemini-api.mjs",
-      "bytes": 5863,
-      "sha256": "4511e6a26f29cf99e97c6b8badafd1c2b571bcd4ddfa4fb883a910547bc80871"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/scripts/gemini.mjs",
-      "bytes": 16087,
-      "sha256": "5769b8695c3ff967977f1239aa5f69beb1129af6e43bd6abc655d7c54e00caf7"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/scripts/gemini.test.mjs",
-      "bytes": 4425,
-      "sha256": "22435742a2015ef7d40563045e7b3c852187f70093406f7a113dee230a139a5b"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/scripts/login.mjs",
-      "bytes": 174,
-      "sha256": "df220f5d5e9c0e057988897c1d34c1095ee6fa7b81684ac2f1cbbaeb06986059"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/scripts/mcp.mjs",
-      "bytes": 3344,
-      "sha256": "3c3e7aa4daaf080156433ea30ab9c7c1df70d6e6f0e2a49080b6d9620ba0ec03"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/scripts/review-contract.mjs",
-      "bytes": 9792,
-      "sha256": "84258ca41cc5e50b6506f248bdf7e86d6332532e8ecdc8e7bae4e52fbefbc507"
-    },
-    {
-      "path": "2026-10-08-agent-workflow/scripts/review-contract.test.mjs",
-      "bytes": 3249,
-      "sha256": "ad529fea6d4abab83d29f48ca83dbbdf3f39b713e4a6a42a3dbc5eadce3dd59f"
+      "bytes": 149,
+      "sha256": "8e5675412d903fd589b84abd1e1c94d355df6818d04229c3cfb8f16a0c2b97cd"
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1421,
-      "sha256": "23cd8a7561f5033be3b02afad8569e6cc242dcf279cbabc08712055e57663e36"
+      "bytes": 2140,
+      "sha256": "e55a6734ea9c201641463720f48dcb4ee062ca2073b5c522b0e993e4d23c09d4"
     },
     {
       "path": "README.md",
-      "bytes": 4272,
-      "sha256": "d0322d373c8621fcbda8559f0bc4550158c3e79aa1722628ecc1c485bf551fc7"
+      "bytes": 10512,
+      "sha256": "7c8cdade07518132f94fb43911e11129aff9eaa1e622637ea15d7a7fb984d986"
     },
     {
-      "path": "docs/flow.md",
-      "bytes": 978,
-      "sha256": "9c9b1c59ba373ab8c51f93ea35c0e78f0aa5b6b8205c2e44135c3e8f0a34c984"
+      "path": "adapters/gemini/README.md",
+      "bytes": 1840,
+      "sha256": "894429b0fb76f5d33863524e9052f4f061691d131fb39ed89bebad3dee70d197"
     },
     {
-      "path": "docs/native-html-project-rules.md",
-      "bytes": 12689,
-      "sha256": "dc57a6a87dbc9e327a25e00de1b43ffba7bd1d3e6da34d8c0b81f8904ae9df84"
+      "path": "adapters/gemini/THIRD_PARTY.md",
+      "bytes": 549,
+      "sha256": "7c3babdd4d7c9c813004aa1fa37dfd59ead1e328e9d38406a40d9ad8e660b4b3"
     },
     {
-      "path": "docs/third-party.md",
-      "bytes": 522,
-      "sha256": "a3a5f60c3f59887f10a34a9a10de3e0ceff812da2f95a82e09c555eba32094ce"
-    },
-    {
-      "path": "docs/validation.md",
-      "bytes": 2146,
-      "sha256": "21d467350ddd569ddd394dbe88e75877746a82949b8974df1dad6d7dc99b7b30"
-    },
-    {
-      "path": "examples/recheck.example.json",
+      "path": "adapters/gemini/examples/recheck.example.json",
       "bytes": 326,
       "sha256": "08ac1be63ff7bbd0ec138100b9eb78341899170bca2e56204631ab8d225fdc34"
     },
     {
-      "path": "examples/request.example.json",
+      "path": "adapters/gemini/examples/request.example.json",
       "bytes": 353,
       "sha256": "f80a238e43e6d864efbcbb2fdd5fc268a444c40ee4c54473d03675009c25e972"
+    },
+    {
+      "path": "adapters/gemini/install-antigravity.ps1",
+      "bytes": 7164,
+      "sha256": "6799b0b3d3ae4af24d88bc4de5eed4fed5742748efece971f68d62dba7841c69"
+    },
+    {
+      "path": "adapters/gemini/prompts/visual-review.txt",
+      "bytes": 6054,
+      "sha256": "5e69b029efcd02c60c368eb7221674a70f14d210a105238553b6da2406168389"
+    },
+    {
+      "path": "adapters/gemini/scripts/api-probe.py",
+      "bytes": 4189,
+      "sha256": "6ba294973c6ea9c3ee782871a5125be5351f46d90e6810fc0c025eb0af1af3b3"
+    },
+    {
+      "path": "adapters/gemini/scripts/gemini-api.mjs",
+      "bytes": 5863,
+      "sha256": "4511e6a26f29cf99e97c6b8badafd1c2b571bcd4ddfa4fb883a910547bc80871"
+    },
+    {
+      "path": "adapters/gemini/scripts/gemini.mjs",
+      "bytes": 16087,
+      "sha256": "5769b8695c3ff967977f1239aa5f69beb1129af6e43bd6abc655d7c54e00caf7"
+    },
+    {
+      "path": "adapters/gemini/scripts/login.mjs",
+      "bytes": 174,
+      "sha256": "df220f5d5e9c0e057988897c1d34c1095ee6fa7b81684ac2f1cbbaeb06986059"
+    },
+    {
+      "path": "adapters/gemini/scripts/mcp.mjs",
+      "bytes": 3339,
+      "sha256": "eb282e77714411a88282f756090e77c5258e75b78e554735eea6879c4e9a2b60"
+    },
+    {
+      "path": "adapters/gemini/scripts/review-contract.mjs",
+      "bytes": 9130,
+      "sha256": "955436c92e9e0b981b9ea54aa5c7b604eecee9d71228f38e20d115cd26bc4caf"
+    },
+    {
+      "path": "adapters/gemini/tests/api-probe.test.py",
+      "bytes": 2068,
+      "sha256": "e949f015f7d4b55b87f1c644ba9a02afb9cabdccdc012d5c516ed71fdcee8396"
+    },
+    {
+      "path": "adapters/gemini/tests/gemini.test.mjs",
+      "bytes": 4434,
+      "sha256": "11b492623ec1e0bdb6ddf437c27174c1e6b5c6dc2682e140d955ca06389aed53"
+    },
+    {
+      "path": "adapters/gemini/tests/review-contract.test.mjs",
+      "bytes": 3267,
+      "sha256": "4ffb68223ea02247d9bd6ec6edbe2df7cb1dfa1c0edbc95c1ffabb0c6a8aade9"
+    },
+    {
+      "path": "bin/workflow.mjs",
+      "bytes": 4067,
+      "sha256": "b1b4c0a892183c6fb2d8f895c7bf3f924397a50fe077a17d837da59610e5f3fa"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 2465,
+      "sha256": "0165bcadd8f8a673b400303ecd7d159209819068ec2f24702a1c665ab229a8b2"
+    },
+    {
+      "path": "docs/cli.md",
+      "bytes": 2924,
+      "sha256": "787b8f55f523d13cfeaa05340b5cb21b844d614e451bb28abb229999641a0f67"
+    },
+    {
+      "path": "docs/flow.md",
+      "bytes": 1464,
+      "sha256": "e951250d553c10219c75b6c1bc851f610c557d3666d069a4b1f558b958c294d9"
+    },
+    {
+      "path": "docs/review-policy.md",
+      "bytes": 6030,
+      "sha256": "bd8e1b214fb8e383444164553300642b262d2110a0249f9bc96bfb1bd1e4bc73"
+    },
+    {
+      "path": "docs/review-protocol.md",
+      "bytes": 8319,
+      "sha256": "54cff98404db341f2d79c3b253930154e81ce3a9f91ceae0a163f915603b6b2f"
+    },
+    {
+      "path": "docs/reviewer-context.md",
+      "bytes": 7046,
+      "sha256": "701966a9d4d27b3f65d2a037430f1a2fb7098a15e26f4aec52d879ab07519552"
+    },
+    {
+      "path": "docs/validation.md",
+      "bytes": 2275,
+      "sha256": "68840dbbc0e40c7c3dbf651c08b642714fa090cc5c6090eed5ef42a60b28d7d8"
+    },
+    {
+      "path": "examples/freeze-files.example.json",
+      "bytes": 479,
+      "sha256": "8ec43a90a9335960e711bd5322132fdd6d15a3af379e59a41ac8de90ad491344"
+    },
+    {
+      "path": "examples/input-index.example.json",
+      "bytes": 523,
+      "sha256": "034a1865a26d9c30a8505a9ef03a6217f41f1b4ed4c7c5669b8c0425f602f0c2"
+    },
+    {
+      "path": "examples/review-assessment.example.json",
+      "bytes": 1345,
+      "sha256": "0268f16a530184d927a3a3a369c923e1101586666e94fb0aaabb182151909c64"
+    },
+    {
+      "path": "examples/task-contract.example.json",
+      "bytes": 1450,
+      "sha256": "fb066427fdb1d3b366fe324228d6e9c66046032ae50e9978290e71453310e91f"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 250,
+      "sha256": "a03fcd016f8ffe6a5565b59f2534fde341b8a9b09dc026023b83043210f04921"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1390,
+      "sha256": "fafc9e77f9a281f010b8a83cbb1b9dc56d8b156b04d92ac548b73dba509e22b4"
+    },
+    {
+      "path": "prompts/independent-review.txt",
+      "bytes": 2740,
+      "sha256": "b6f1672a1b5c8565a4681bf24a220bc932356b3da11a59525deb94a8ca628c0f"
+    },
+    {
+      "path": "scripts/manifest.mjs",
+      "bytes": 2990,
+      "sha256": "903abdcc70c404e468b42bfab7910caca000426c8ed44570e86fe3b372c510ea"
+    },
+    {
+      "path": "scripts/validate.mjs",
+      "bytes": 3351,
+      "sha256": "a823a48e2dcb58ac553f16e4a435983b51054274f5306198e0112eaf9eb3c7fc"
+    },
+    {
+      "path": "src/review/context.mjs",
+      "bytes": 4309,
+      "sha256": "a19d82aff96a9f3036f11a04e59e513ecf6658f72c8c840a66cfe8c54e7e93dd"
+    },
+    {
+      "path": "src/review/contract.mjs",
+      "bytes": 10929,
+      "sha256": "1dcba72a1566e4e07418fb0f2e1cc94efd11e7fdcc17db2b6328b7aee6f327d3"
+    },
+    {
+      "path": "src/review/dimensions.mjs",
+      "bytes": 1122,
+      "sha256": "63401c49118d22fd50115e8a414e2a3fe4270bdd0b5609b56ce1ac392ede0f38"
+    },
+    {
+      "path": "src/review/gate.mjs",
+      "bytes": 4790,
+      "sha256": "d4c4fe34faefa02384192397a4b203b3c669d6ef147711f055a9fc5f8bd0872b"
+    },
+    {
+      "path": "tests/cli.test.mjs",
+      "bytes": 4237,
+      "sha256": "30eab9ad397cd60e57b77536ace541e612183249292b3c60fcc2d0309911a323"
+    },
+    {
+      "path": "tests/context.test.mjs",
+      "bytes": 5029,
+      "sha256": "865caf4fb08aef7bbaae566ed0a5d0be3c2d78ac4aef0ea40806268f63b9930f"
+    },
+    {
+      "path": "tests/contract.test.mjs",
+      "bytes": 12194,
+      "sha256": "de79a803e5fb34e2facd1e76b8fbbd6e6c8e008b32ec498261782925f6beb2d9"
+    },
+    {
+      "path": "tests/gate.test.mjs",
+      "bytes": 4789,
+      "sha256": "7dfb0f330a7bfb95cda83fc561746a1158415a39bd8527ead749f3cbf3ab2dd8"
+    },
+    {
+      "path": "tests/integrity.test.mjs",
+      "bytes": 1982,
+      "sha256": "dc282dd88df306bc07af74d398afb91f399b7e29c93c72b9ee3d818f810ed6a8"
     }
-  ],
-  "note": "Manifest omits itself. Secrets and runtime are not distributed."
+  ]
 }

@@ -1,0 +1,35 @@
+{
+  "schema_version": 3,
+  "task_id": "entry-migration-example",
+  "implementation_agent_id": "actual-executor-session-id",
+  "brief": "示例模板：整理调用入口与文档；实际使用须替换为用户原始任务，不把示例当已完成事实。",
+  "criteria": [
+    {
+      "id": "R-ENTRY",
+      "scope": "round",
+      "required": true,
+      "verification_type": "document",
+      "description": "约定入口、操作顺序和参数说明一致，旧入口迁移已说明。",
+      "basis": "替换为用户要求与目标规则原文/出处。",
+      "verification": "实际阅读入口和原始文档快照，逐项核对调用路径。"
+    },
+    {
+      "id": "T-CHECKS",
+      "scope": "technical",
+      "required": true,
+      "verification_type": "programmatic",
+      "description": "必要离线检查通过，引用资源/模块存在且非空。",
+      "basis": "替换为项目约定的检查要求。",
+      "verification": "独立运行当前版本检查，核对原始输出与冻结哈希。"
+    },
+    {
+      "id": "G-OPTIONAL",
+      "scope": "global",
+      "required": false,
+      "verification_type": "document",
+      "description": "仅记录用户明确排除在当前范围外的兼容性建议。",
+      "basis": "实际授权包含的工作必须列入round必需项，不能照抄此示例降级。",
+      "verification": "根据原始范围记录判断建议是否非阻断。"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "task_id": "replace-with-actual-task-id",
+  "implementation_agent_id": "replace-with-actual-executor-id",
+  "change_summary": "模板：替换为本轮真实改动，不作为已经完成的事实。",
+  "assessment_basis": "替换为原始证据中的具体观察，说明每个影响项和启动条件；未知不填false。",
+  "readiness": { "stable": false, "checks_passed": false, "evidence_complete": false },
+  "impact": { "behavior": true, "meaning": true, "layout": true, "permissions_or_data": true, "shared_rules_or_dependencies": true },
+  "review": {
+    "explicitly_required": true,
+    "allow_low_risk_exemption": false,
+    "prior_reviewer_id": null,
+    "prior_review_valid": false,
+    "prior_review_passed": false,
+    "revision_changed": true,
+    "reviewer_context_available": false,
+    "contamination": false,
+    "co_design": false,
+    "severe_miss": false,
+    "material_dispute": false,
+    "important_delivery": false,
+    "completed_rounds": 0
+  },
+  "evidence": [
+    { "id": "raw-diff", "path": "runtime/task/raw-diff.txt", "sha256": "REPLACE_WITH_ACTUAL_SHA256", "description": "真实差异，不含执行者自评。" },
+    { "id": "checks", "path": "runtime/task/checks.txt", "sha256": "REPLACE_WITH_ACTUAL_SHA256", "description": "当前版本原始必要检查输出。" }
+  ]
+}

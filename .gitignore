@@ -1,5 +1,7 @@
 **/node_modules/
 **/runtime/
+.DS_Store
+**/.DS_Store
 .env
 .env.*
 !.env.example

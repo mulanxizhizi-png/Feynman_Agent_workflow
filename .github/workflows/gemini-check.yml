@@ -14,8 +14,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: One official Gemini text request
-        working-directory: 2026-10-08-agent-workflow
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_PROXY: ''
-        run: npm run api-check
+        run: npm run gemini:api-check

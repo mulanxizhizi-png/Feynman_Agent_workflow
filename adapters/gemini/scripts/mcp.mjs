@@ -3,7 +3,7 @@ import { apiConnectionCheck, apiVisualReview } from './gemini-api.mjs';
 
 const tools = [
   { name: 'gemini_connection_check', description: '用GEMINI_API_KEY向官方Gemini 3.8 Flash API进行一次文字连通测试；消耗一次请求。', inputSchema: { type: 'object', properties: {}, additionalProperties: false } },
-  { name: 'gemini_visual_review', description: '将指定截图及参考图交给官方Gemini API，返回七维十分制评分、问题ID、Sol修改提示词与复验条件。需要进程GEMINI_API_KEY，仅审核不修改页面。', inputSchema: { type: 'object', properties: {
+  { name: 'gemini_visual_review', description: '可选旧schema 2外部诊断：截图七维评分与建议，不决定schema 3交付状态。默认关闭，需要显式启用及进程GEMINI_API_KEY，仅审核不修改页面。', inputSchema: { type: 'object', properties: {
     brief: { type: 'string', description: '最新用户要求、审核目标以及本轮已修改的内容。' },
     screenshots: { type: 'array', minItems: 1, items: { type: 'string' }, description: '实际渲染截图的绝对路径。' },
     references: { type: 'array', items: { type: 'string' }, description: '参考图绝对路径。' },

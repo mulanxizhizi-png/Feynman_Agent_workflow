@@ -4,7 +4,11 @@ permissions:
   contents: read
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -13,13 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: JavaScript syntax
-        run: |
-          for file in 2026-10-08-agent-workflow/scripts/*.mjs; do node --check "$file"; done
-      - name: Python syntax
-        run: python -m py_compile 2026-10-08-agent-workflow/scripts/api-probe.py
-      - name: Offline contract tests
-        working-directory: 2026-10-08-agent-workflow
-        run: npm test
-      - name: Offline transport regression tests
-        run: python 2026-10-08-agent-workflow/scripts/api-probe.test.py
+      - name: Offline sources, contracts, transport and distribution integrity
+        env:
+          WORKFLOW_PYTHON: python
+        run: npm run validate

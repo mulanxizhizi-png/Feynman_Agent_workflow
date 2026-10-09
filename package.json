@@ -1,0 +1,31 @@
+{
+  "name": "sol-terra-gemini-workflow",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "workflow": "node bin/workflow.mjs",
+    "workflow-decide": "node bin/workflow.mjs decide",
+    "workflow-freeze": "node bin/workflow.mjs freeze",
+    "workflow-check": "node bin/workflow.mjs check",
+    "test": "node --test tests/*.test.mjs adapters/gemini/tests/*.test.mjs",
+    "test:core": "node --test tests/*.test.mjs",
+    "test:gemini": "node --test adapters/gemini/tests/*.test.mjs",
+    "validate": "node scripts/validate.mjs",
+    "manifest": "node scripts/manifest.mjs check",
+    "gemini:login": "node adapters/gemini/scripts/login.mjs",
+    "gemini:check": "node adapters/gemini/scripts/gemini.mjs check",
+    "gemini:review": "node adapters/gemini/scripts/gemini.mjs review",
+    "gemini:browser-request": "node adapters/gemini/scripts/gemini.mjs browser-request",
+    "gemini:browser-record": "node adapters/gemini/scripts/gemini.mjs browser-record",
+    "gemini:mcp": "node adapters/gemini/scripts/mcp.mjs",
+    "gemini:api-check": "node adapters/gemini/scripts/gemini-api.mjs check",
+    "gemini:api-review": "node adapters/gemini/scripts/gemini-api.mjs review"
+  },
+  "engines": { "node": ">=22" },
+  "exports": {
+    "./contract": "./src/review/contract.mjs",
+    "./context": "./src/review/context.mjs",
+    "./gate": "./src/review/gate.mjs"
+  }
+}

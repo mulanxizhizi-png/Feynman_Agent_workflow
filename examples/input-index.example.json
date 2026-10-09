@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "replace-with-actual-task-id",
+  "first_pass": ["requirements", "rules", "source", "actual-checks"],
+  "after_first_findings": [
+    { "id": "previous-review", "category": "旧审核结论；首次发现固定后才读正文" },
+    { "id": "historical-validation", "category": "历史验证总结；首次发现固定后才读正文" }
+  ],
+  "note": "模板ID须对应实际冻结文件；索引自身纳入reference冻结。分类由审核者独立核对，不附预期结论。"
+}

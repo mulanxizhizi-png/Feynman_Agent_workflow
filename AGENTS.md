@@ -1,21 +1,29 @@
-# Astra / Sol / Gemini workflow repository
+# Workflow repository instructions
 
-This repository packages orchestration instructions and a Gemini screenshot review adapter.
-Use `.agents/skills/astra-sol-gemini/SKILL.md` when the user requests this workflow.
-The main chat coordinates; GPT-6.1 Sol implements; GPT-6 Astra independently reviews;
-the official Gemini API reviews actual screenshots and emits seven dimension scores.
+This repository ships a reusable workflow, not a product page. Start at
+.agents/skills/independent-review-workflow/SKILL.md. The old sol-terra-gemini skill is an alias.
+The executor (GPT-6 Sol / low) implements; the coordinator/reviewer (GPT-6.1 Sol / high)
+orchestrates and audits in separate contexts, never co-designs or patches the reviewed version.
+Target project rules and latest user requirements take precedence over workflow defaults.
 
-Preserve user instructions, business facts, copy and original image assets.
-Only the implementation agent writes the target page during a review round.
-Review the same frozen revision; after changes, capture fresh screenshots.
-Never claim that missing screenshots, font evidence, API calls or model reviews passed.
-Respect browser policy: do not bypass rejected navigation or replace screenshots with source guesses.
-Do not spawn agents except when requested by the user or this invoked workflow skill.
+Read docs/review-policy.md before selecting an audit action. Record original evidence and
+run bin/workflow.mjs decide; do not change risk declarations or exemptions after a failed review.
+Use fresh context for initial/final independent review. Reuse the same reviewer for ordinary
+rechecks. Keep implementer opinions and historical verdicts out of the first-pass packet.
+The reviewer owns its acquisition registry, first findings, issue ledger and checkpoints.
+Related model families and different reasoning effort do not eliminate shared bias; preferences remain advisory.
+Model agreement cannot establish universal user acceptance.
 
-Do not commit credentials, OAuth caches, runtime records, private screenshots or binaries.
-Use GEMINI_API_KEY via process environment or stdin. The GitHub Actions secret is separate
-from a local credential; cloning the repository does not download it.
-Do not automatically enable paid models, change global proxies or retry without a bound.
+Schemas, CLI and context boundaries are defined once in docs/review-protocol.md,
+docs/cli.md and docs/reviewer-context.md. Load only what the task needs.
+Core implementation lives in src/review; bin/workflow.mjs is the only native CLI entry.
+adapters/gemini is optional legacy schema 2 diagnostics, disabled by default.
+Defaults in .codex are templates, not proof of actual runtime model or permissions.
 
-The original native HTML project rules are retained in docs/native-html-project-rules.md
-as an example. They apply when explicitly selected for a page project, not to every project.
+Run npm run validate after source changes; regenerate MANIFEST.json with
+node scripts/manifest.mjs build into a separate temporary file and apply the reviewed result.
+Only manifest-listed workflow sources and MANIFEST.json belong in a publication.
+Never commit runtime/, caches, screenshots, credentials, third-party binaries or target-project files.
+Preserve unrelated changes; user-authorized publication is separate from model review status.
+No command in this repository launches agents or automatically publishes.
+Report source/contract status, technical status, independence evidence and scope limits separately.

@@ -8,7 +8,7 @@ import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from unittest.mock import patch
 
-spec = importlib.util.spec_from_file_location('api_probe', pathlib.Path(__file__).with_name('api-probe.py'))
+spec = importlib.util.spec_from_file_location('api_probe', pathlib.Path(__file__).parents[1] / 'scripts' / 'api-probe.py')
 probe = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(probe)
 
