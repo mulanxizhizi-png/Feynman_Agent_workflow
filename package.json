@@ -1,6 +1,6 @@
 {
-  "name": "sol-terra-gemini-workflow",
-  "version": "0.3.0",
+  "name": "feynman-agent",
+  "version": "0.3.1",
   "private": true,
   "type": "module",
   "scripts": {

@@ -1,0 +1,6 @@
+interface:
+  display_name: "费曼 Agent"
+  short_description: "跨项目调用费曼工作流：分工实现、独立审核与证据验收，减少上下文污染"
+  default_prompt: "使用 $feynman-agent 承接当前项目任务，按既定策略组织实现与独立审核。"
+policy:
+  allow_implicit_invocation: true

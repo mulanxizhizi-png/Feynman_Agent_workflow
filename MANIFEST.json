@@ -2,6 +2,16 @@
   "format": 1,
   "files": [
     {
+      "path": ".agents/skills/feynman-agent/SKILL.md",
+      "bytes": 2351,
+      "sha256": "5a2e6c7d9fb34e20460d1e122363a50527d7c4ec9810735967cb1bc8dd95f98b"
+    },
+    {
+      "path": ".agents/skills/feynman-agent/agents/openai.yaml",
+      "bytes": 322,
+      "sha256": "90ec4c903d9b03a53bf51dee3ea2e2153faef7e2055a57dbee8c41f84acc8625"
+    },
+    {
       "path": ".agents/skills/independent-review-workflow/SKILL.md",
       "bytes": 4078,
       "sha256": "2adeea47b62dad47e54b93938431dce41655d6839f8e877e2d2e03c1a886ac71"
@@ -48,13 +58,13 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 2140,
-      "sha256": "e55a6734ea9c201641463720f48dcb4ee062ca2073b5c522b0e993e4d23c09d4"
+      "bytes": 2211,
+      "sha256": "13e5bcdc231bc5003d50c7e34212d51e78d1f998da720639268bfb59aeff58cb"
     },
     {
       "path": "README.md",
-      "bytes": 10512,
-      "sha256": "7c8cdade07518132f94fb43911e11129aff9eaa1e622637ea15d7a7fb984d986"
+      "bytes": 11028,
+      "sha256": "1c498e5d924674dbc670e36d196a6e4a2ac412ab62061bbcfc63bb6ebee3439d"
     },
     {
       "path": "adapters/gemini/README.md",
@@ -152,6 +162,11 @@
       "sha256": "e951250d553c10219c75b6c1bc851f610c557d3666d069a4b1f558b958c294d9"
     },
     {
+      "path": "docs/install.md",
+      "bytes": 2534,
+      "sha256": "dd6872ef615fbd1aee3b82acc1230343b49e6ee5abca80b7d5bc088a97a6e5b5"
+    },
+    {
       "path": "docs/review-policy.md",
       "bytes": 6030,
       "sha256": "bd8e1b214fb8e383444164553300642b262d2110a0249f9bc96bfb1bd1e4bc73"
@@ -193,13 +208,13 @@
     },
     {
       "path": "package-lock.json",
-      "bytes": 250,
-      "sha256": "a03fcd016f8ffe6a5565b59f2534fde341b8a9b09dc026023b83043210f04921"
+      "bytes": 226,
+      "sha256": "c90940d992271f8def05f5d6797d5c8027a4791e3849a172605d7dc13ce1155f"
     },
     {
       "path": "package.json",
-      "bytes": 1390,
-      "sha256": "fafc9e77f9a281f010b8a83cbb1b9dc56d8b156b04d92ac548b73dba509e22b4"
+      "bytes": 1378,
+      "sha256": "be997341777caab06b8646bf3b22ee405a95969af617a7e3957d8a0bcda164fc"
     },
     {
       "path": "prompts/independent-review.txt",

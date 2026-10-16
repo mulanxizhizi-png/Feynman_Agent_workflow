@@ -1,6 +1,7 @@
 # Workflow repository instructions
 
 This repository ships a reusable workflow, not a product page. Start at
+.agents/skills/feynman-agent/SKILL.md (Feynman Agent), which routes to
 .agents/skills/independent-review-workflow/SKILL.md. The old sol-terra-gemini skill is an alias.
 The executor (GPT-6 Sol / low) implements; the coordinator/reviewer (GPT-6.1 Sol / high)
 orchestrates and audits in separate contexts, never co-designs or patches the reviewed version.

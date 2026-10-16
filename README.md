@@ -1,21 +1,25 @@
-# 实现与独立审核工作流
+# 费曼 Agent · Feynman Agent
+
+**独立实现，循证审核。**
 
 让执行者连续实现、自检和修复，在适当的验收点由独立上下文的审核者检查结果。审核启动有明确条件，结论依赖原始证据和固定标准；不以模型一致、主观分数或“全 10 分”代表客观正确。
 
-这个仓库只包含工作流、离线工具、模板和可选 Gemini 适配器。没有业务页面、素材或本机审核记录。当前版本为 **0.3.0**，原仓库地址保持不变。
+这个仓库只包含工作流、离线工具、模板和可选 Gemini 适配器。没有业务页面、素材或本机审核记录。当前版本为 **0.3.1**，发布仓库为 [sol-gemini-workflow](https://github.com/mulanxizhizi-png/sol-gemini-workflow)。
 
 ## 给 Agent 的最短入口
 
-在此仓库中调用：
+在此仓库中调用，或按 [跨项目安装说明](docs/install.md)安装用户级入口后调用：
 
 ```text
-$independent-review-workflow
+$feynman-agent
 目标项目：<项目绝对路径>
 任务：<实际要求>
 请按工作流判断审核时机，保存启动理由，完成实现、自检与必要独立审核。
 ```
 
-历史调用名 `$sol-terra-gemini` 继续可用，指向同一技能。跨项目使用时，让 Agent 读取本地完整工作流仓库里的 [.agents/skills/independent-review-workflow/SKILL.md](.agents/skills/independent-review-workflow/SKILL.md)，再明确目标项目。不要只复制技能文件：它依赖仓库内的协议和工具。
+自然语言调用：“启动／开启／执行费曼 Agent，帮我……”。新会话选择 **GPT-6.1 Sol / high** 作为统筹主 Agent；执行与独立盲审分别委派到不同子 Agent 上下文。单纯讨论名称或机制不启动执行。
+
+`$independent-review-workflow` 与历史调用名 `$sol-terra-gemini` 继续可用。费曼入口位于 [.agents/skills/feynman-agent/SKILL.md](.agents/skills/feynman-agent/SKILL.md)，复用 [完整工作流](.agents/skills/independent-review-workflow/SKILL.md)。不要只复制技能文件：它依赖仓库内的协议和工具。
 
 默认执行者为 **GPT-6 Sol / low**，统筹审核者为 **GPT-6.1 Sol / high**。统筹调度与首次盲审使用分开的上下文；执行者负责生产写入，审核者不参与实施。配置不会切换已经运行的对话，也不证明实际模型或权限。Gemini 默认关闭，只有明确启用时才使用。
 
@@ -24,8 +28,8 @@ $independent-review-workflow
 需要 Node.js 22+、Python 3.11+。无第三方 npm 依赖，无需 npm install。
 
 ```sh
-git clone https://github.com/mulanxizhizi-png/astra-sol-gemini-workflow.git
-cd astra-sol-gemini-workflow
+git clone https://github.com/mulanxizhizi-png/sol-gemini-workflow.git
+cd sol-gemini-workflow
 node bin/workflow.mjs help
 npm run validate
 ```
@@ -124,7 +128,8 @@ runtime/             本机运行产物，被 Git 忽略，不发布
 
 其他 Agent 按目的读取，不必加载整仓库：
 
-- 执行任务：[主技能](.agents/skills/independent-review-workflow/SKILL.md) → [启动策略](docs/review-policy.md)。
+- 安装调用：[安装说明](docs/install.md) → [费曼入口](.agents/skills/feynman-agent/SKILL.md)。
+- 执行任务：[完整工作流](.agents/skills/independent-review-workflow/SKILL.md) → [启动策略](docs/review-policy.md)。
 - 独立审核：[审核协议](docs/review-protocol.md) → [上下文协议](docs/reviewer-context.md) → [审核提示词](prompts/independent-review.txt)。
 - 调用工具：[CLI](docs/cli.md)；代码可直接导入 src/review 的导出函数，无模型依赖。
 - 修改仓库：[架构](docs/architecture.md) → [验证方法](docs/validation.md)。
